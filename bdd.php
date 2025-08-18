@@ -1,5 +1,5 @@
 <?php
 function connexion()
 {
-    return new PDO('mysql:dbname=artbox;host=localhost', 'root', '');
+    return new PDO('mysql:dbname=artbox;host=localhost', 'root', 'root');
 }

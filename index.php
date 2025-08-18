@@ -1,12 +1,17 @@
 <?php
-    require 'header.php';
-    require 'bdd.php';
 
-    $bdd = connexion();
-    $oeuvres = $bdd->query('SELECT * FROM oeuvres');
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+require 'header.php';
+require 'bdd.php';
+
+$bdd = connexion();
+$oeuvres = $bdd->query('SELECT * FROM oeuvres');
 ?>
 <div id="liste-oeuvres">
-    <?php foreach($oeuvres as $oeuvre): ?>
+    <?php foreach ($oeuvres as $oeuvre): ?>
         <article class="oeuvre">
             <a href="oeuvre.php?id=<?= $oeuvre['id'] ?>">
                 <img src="<?= $oeuvre['image'] ?>" alt="<?= $oeuvre['titre'] ?>">

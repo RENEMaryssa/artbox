@@ -11,3 +11,7 @@ Pour installer ce projet :
 2. Dézipper le projet et placez-le dans le dossier contenant vos projets PHP habituels.
 3. Ouvrir le projet dans le navigateur via l'adresse http://localhost/NOM_DU_DOSSIER (ou autre selon votre configuration)
 4. Ouvrir le projet dans votre IDE (exemple : VSCode) pour réaliser les prochaines étapes.
+
+
+# Dépôt GitHub - The ArtBox
+Lien du dépôt GitHub : https://github.com/RENEMaryssa/artbox

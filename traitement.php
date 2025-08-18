@@ -20,8 +20,8 @@ if (empty($_POST['titre'])
     $image = htmlspecialchars($_POST['image']);
 
     // Insertion en base avec requête préparée
-    $stmt = $bdd->prepare("INSERT INTO oeuvres (titre, artiste, description, image) VALUES (:titre, :artiste, :description, :image)");
-    $stmt->execute([
+    $requete = $bdd->prepare("INSERT INTO oeuvres (titre, artiste, description, image) VALUES (:titre, :artiste, :description, :image)");
+    $requete->execute([
         ':titre' => $titre,
         ':artiste' => $artiste,
         ':description' => $description,
